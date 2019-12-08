@@ -1,0 +1,44 @@
+<Window x:Class="GundamList.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GundamList"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Border Padding="20" >
+        <DockPanel>
+            <ListView 
+                x:Name="List"
+                Width="200"
+                SelectionChanged="OnChanged"
+                DockPanel.Dock="Left">
+                <ListViewItem>
+                    <StackPanel>
+                        <TextBlock 
+                            Text="10_of_clubs"
+                            Margin="10,0,10,0"/>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem>
+                    <StackPanel>
+                        <TextBlock 
+                            Text="9_of_clubs"
+                            Margin="10,0,10,0"/>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem>
+                    <StackPanel>
+                        <TextBlock 
+                            Text="8_of_clubs"
+                            Margin="10,0,10,0"/>
+                    </StackPanel>
+                </ListViewItem>
+            </ListView>
+            <Image 
+                DockPanel.Dock="Right"
+                x:Name="image"
+                Source="images/10_of_clubs.png"/>
+        </DockPanel>
+    </Border>
+</Window>
