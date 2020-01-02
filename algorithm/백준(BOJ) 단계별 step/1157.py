@@ -1,14 +1,15 @@
 import sys
 
 word = (sys.stdin.readline()).upper()
+word = word.strip()
 words_list = list(set(word))
 
 words_count = []
 
 for words in words_list:
-
+    
     words_count.append(word.count(words))
-
+    
 if words_count.count(max(words_count)) > 1:
     print("?")
 
