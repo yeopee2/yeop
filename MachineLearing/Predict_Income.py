@@ -1,6 +1,6 @@
 import tensorflow.compat.v1 as tf
-from tensorflow.compat.v1.keras import optimizers
-tf.disable_v2_behavior()
+#from tensorflow.compat.v1.keras import optimizers
+#tf.disable_v2_behavior()
 #tf.optimizers.SGD (learning_rate=0.001, lr_decay=0.0, decay_step=100, staircase=False, use_locking=False, name='SGD')
 
 xData = [1, 2, 3, 4, 5, 6, 7]
